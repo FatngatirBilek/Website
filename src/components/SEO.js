@@ -12,7 +12,7 @@ const SEO = () => {
           author
         }
       }
-      file(relativePath: { eq: "share.png" }) {
+      file(relativePath: { eq: "sharebaru.png" }) {
         publicURL
       }
     }
