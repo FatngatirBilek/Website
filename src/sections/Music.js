@@ -21,15 +21,7 @@ const Music = () => {
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
 
-      <iframe
-        src="https://open.spotify.com/embed/track/4kfjA6WfgKBt7I7YKuDCkU?utm_source=generator&theme=0"
-        width="100%"
-        height="500"
-        frameBorder="0"
-        className="mt-5"
-        allowtransparency="true"
-        allow="encrypted-media"
-      ></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0q6VR7BTYQwUHR1qebuiq5?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </section>
   );
 };
