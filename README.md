@@ -35,7 +35,7 @@ npm install -g gatsby-cli
 2. Clone the repository and go into the working directory
 
 ```console
-git clone https://github.com/fatngatirbilek/Website1.git
+git clone https://github.com/fatngatirbilek/Personal.git
 cd Website
 ```
 
