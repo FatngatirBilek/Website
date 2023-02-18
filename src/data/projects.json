@@ -1,0 +1,18 @@
+[
+  {
+    "image": "../images/projects/login.png",
+    "title": "Tokoku",
+    "description": "Source code web toko dengan fungsi login",
+    "tags": ["php", "css"],
+    "website": "https://github.com/FatngatirBilek/Simple-Shop-web"
+  },
+  
+  {
+    "image": "../images/projects/kelas.png",
+    "title": "Kelas-4",
+    "description": "Source code programming dari awal belajar",
+    "tags": ["php", "html", "javascript", "css"],
+    "github": "https://github.com/FatngatirBilek/Kelas-4"
+  }
+
+]

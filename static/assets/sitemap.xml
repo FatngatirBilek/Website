@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://fatngatirbilek.web.app/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/x/intro/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/x/loveu/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/x/journey/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/x/outlook/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/404</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fatngatirbilek.web.app/x/home/</loc>
+  <lastmod>2020-05-30T01:20:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
