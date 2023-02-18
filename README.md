@@ -2,7 +2,7 @@
 Personal website with multiple subpages for projects 
 
 Main page: [fatngatirbilek.web.app](https://fatngatirbilek.web.app/) |
-           [Optional](https://fatngatirbilek.eu.org/)
+           [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/)
 
 Consists of:
 * [COOLTEXT](https://fatngatirbilek.web.app/x/adc)
