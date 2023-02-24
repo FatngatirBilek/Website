@@ -1,6 +1,8 @@
 # Website
 Personal website with multiple subpages for projects 
 
+Original creator: https://github.com/novatorem
+
 Main page: [fatngatirbilek.web.app](https://fatngatirbilek.web.app/) |
            [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/)
 
@@ -58,4 +60,4 @@ gatsby develop
 **Build command**: `gatsby build`
 
 
-Original creator: https://github.com/novatorem
+
