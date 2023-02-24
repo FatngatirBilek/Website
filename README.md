@@ -35,7 +35,7 @@ npm install -g gatsby-cli
 2. Clone the repository and go into the working directory
 
 ```console
-git clone https://github.com/fatngatirbilek/Personal.git
+git clone https://github.com/fatngatirbilek/Website.git
 cd Website
 ```
 
@@ -56,3 +56,6 @@ gatsby develop
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fe6b65bf-64de-498f-9ae1-72e127ad003c/deploy-status)](https://app.netlify.com/sites/fatngatirbilek/deploys)
 
 **Build command**: `gatsby build`
+
+
+Original creator: https://github.com/novatorem
