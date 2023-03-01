@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="col-span-3">
           <h1 className="sr-only">
             Fathir's Home on the Web
-            University of Toronto - Computer Science & Mathematics
+            Orang paling keren di sekolah
           </h1>
 
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
