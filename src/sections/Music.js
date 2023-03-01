@@ -22,7 +22,7 @@ const Music = () => {
       />
 
       <iframe
-        src="https://open.spotify.com/embed/track/0q6VR7BTYQwUHR1qebuiq5?start=228&theme=0"
+        src="https://open.spotify.com/embed/track/0q6VR7BTYQwUHR1qebuiq5?start=228&theme=0&output=embed"
         width="100%"
         height="500"
         frameBorder="0"
