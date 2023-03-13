@@ -3,14 +3,13 @@ Personal website with multiple subpages for projects
 
 Original creator: https://github.com/novatorem
 
-Main page: [fatngatirbilek.web.app](https://fatngatirbilek.web.app/) |
-           [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/)
+Main page: [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/) 
 
 Consists of:
-* [COOLTEXT](https://fatngatirbilek.web.app/x/adc)
-* [Terminal](https://fatngatirbilek.web.app/x/intro)
-* [404](https://fatngatirbilek.web.app/404)
-* [Home](https://fatngatirbilek.web.app/) 
+* [COOLTEXT](https://fatngatirbilek.eu.org/x/adc)
+* [Terminal](https://fatngatirbilek.eu.org/x/intro)
+* [404](https://fatngatirbilek.eu.org/404)
+* [Home](https://fatngatirbilek.eu.org) 
 
 
 ## Technology
@@ -55,9 +54,13 @@ gatsby develop
 
 ## Netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fe6b65bf-64de-498f-9ae1-72e127ad003c/deploy-status)](https://app.netlify.com/sites/fatngatirbilek/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a7ae458-9b3a-4905-8e97-c313e8b50c39/deploy-status)](https://app.netlify.com/sites/fatngatirbilek/deploys)
 
 **Build command**: `gatsby build`
+
+
+## [Google Firebase](https://firebase.google.com/)
+After deploying you can also upload the build file to Google Firebase
 
 
 

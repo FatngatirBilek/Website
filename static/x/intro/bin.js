@@ -102,12 +102,12 @@ var hookCommands = [
 ];
 
 var bookmarks = [
-    ['resume', 'https://fatngatirbilek.web.app/x/intro/Resume.pdf'],
+    ['resume', 'https://fatngatirbilek.eu.org/x/intro/Resume.pdf'],
     ['github', 'https://github.com/fatngatirbilek'],
     ['facebook', 'https://www.facebook.com/Fatngatirbilek'],
     ['e-mail', 'mailto:fathirbimashabri@gmail.com'],
-    ['main', 'https://fatngatirbilek.web.app'],
-    ['404', 'https://fatngatirbilek.web.app/404'],
+    ['main', 'https://fatngatirbilek.eu.org'],
+    ['404', 'https://fatngatirbilek.eu.org/404'],
 ]
 
 function name(str) {

@@ -9,13 +9,13 @@ module.exports = {
     title: `Fathir`,
     description: `Gw gatau gunanya web ini buat apa.`,
     author: `Fathirbilek`,
-    siteUrl: `https://fatngatirbilek.web.app`,
+    siteUrl: `https://fatngatirbilek.eu.org`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://fatngatirbilek.web.app`,
+        siteUrl: `https://fatngatirbilek.eu.org`,
       },
     },
     {
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://fatngatirbilek.web.app`,
-        sitemap: `https://fatngatirbilek.web.app/sitemap.xml`,
+        host: `https://fatngatirbilek.eu.org`,
+        sitemap: `https://fatngatirbilek.eu.org/sitemap.xml`,
         policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
