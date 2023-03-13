@@ -20,7 +20,7 @@ Otherwise, to navigate to one of the other publically accessible pages, choose f
   <td width="20%">
 
 <a><p align="center">
-[Terminal](https://fatngatirbilek.eu.orgx/intro)‌‌
+[Terminal](https://fatngatirbilek.eu.org/x/terminal)‌‌
 </p>
   </td>
   <td width="20%">
