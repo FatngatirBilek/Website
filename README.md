@@ -3,6 +3,9 @@ Personal website with multiple subpages for projects
 
 Original creator: https://github.com/novatorem
 
+# OUTDATED
+Packages and dependencies on this website have not been updated, please do it yourself :D
+
 Main page: [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/) 
 
 Consists of:
