@@ -10,7 +10,7 @@ Original creator: https://github.com/novatorem
 Main page: [fatngatirbilek.eu.org](https://fatngatirbilek.eu.org/) 
 
 Consists of:
-* [COOLTEXT](https://fatngatirbilek.eu.org/x/adc)
+* [COOLTEXT](https://fatngatirbilek.eu.org/x/cooltext)
 * [Terminal](https://fatngatirbilek.eu.org/x/intro)
 * [404](https://fatngatirbilek.eu.org/404)
 * [Home](https://fatngatirbilek.eu.org) 

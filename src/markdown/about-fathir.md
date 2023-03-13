@@ -32,7 +32,7 @@ Otherwise, to navigate to one of the other publically accessible pages, choose f
     <td width="20%">
 
 <a><p align="center">
-[COOL TEXT](https://fatngatirbilek.eu.org/x/adc)‌‌
+[COOL TEXT](https://fatngatirbilek.eu.org/x/cooltext)‌‌
 </p>
   </td>
     <td width="20%">
