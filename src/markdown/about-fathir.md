@@ -1,8 +1,9 @@
 ---
 id: "about-fathir"
 ---
-Gw Aim Fine :D
 
+
+Hi, my name is Fathir. I am an Enthusiast Backend Engineer who enjoys working with technology and learning new things in the IT field. Currently, I'm focusing on learning about several technologies such as **TypeScript**, **PHP**, **ReactJS**, and also **GatbsyJS** to improve my skills and experience as a developer. I am always interested in learning and continuing to develop myself so that I can provide the best and most effective solutions for every project I work on.
 
 
 <p>

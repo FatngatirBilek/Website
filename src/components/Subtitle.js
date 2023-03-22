@@ -23,8 +23,8 @@ const Subtitle = ({ onDone }) => (
       <span className="text-blue-600">echo</span>{" "}
         <span className="text-red-500">Developer</span>,{" "}
         <span className="text-red-500">Student</span>,{" "}
-        <span className="text-red-500">Suka Cewe</span>,{" "}
-        <span className="text-red-500">Habis Move On</span>;{" "}
+        <span className="text-red-500">IT Enthusiast</span>,{" "}
+        <span className="text-red-500">Reader</span>;{" "}
       </div>
       <div>{"}"}
       </div>
