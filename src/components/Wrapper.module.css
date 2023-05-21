@@ -6,6 +6,6 @@
 
 .light {
   color: #222222;
-  background-color: #ffffff
+  background-color: #ffffff;
   @apply transition-all duration-200 ease-in-out;
 }

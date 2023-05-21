@@ -49,7 +49,7 @@
   }
 
   .container .section-links div:hover {
-    color: theme("colors.primary.500");
+    color: gray-500; /* Replace 'theme("gray-500")' with 'gray-500' */
     @apply transition-default;
   }
 }

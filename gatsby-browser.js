@@ -1,9 +1,9 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 
-import "./src/css/tailwind.css";
 import "./src/css/animate.css";
 import "./src/css/global.css";
+import "./src/css/tailwind.css";
 
 import { ThemeProvider } from "./src/context/ThemeContext";
 

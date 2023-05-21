@@ -1,15 +1,35 @@
+import Tooltip from "@mui/material/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useContext, useState } from "react";
 import Heading from "../components/Heading";
 import { MdLocationOn, MdMoreHoriz, MdWork } from "../components/Icons";
 import ThemeContext from "../context/ThemeContext";
-import Tooltip from "@material-ui/core/Tooltip";
 
-const Work = () => {
+interface WorkData {
+  allWorkJson: {
+    edges: {
+      node: {
+        id: string;
+        title: string;
+        subtitle: string;
+        period: string;
+        location: string;
+        specialization: string;
+        icon: {
+          childImageSharp: {
+            fixed: IGatsbyImageData;
+          };
+        };
+      };
+    }[];
+  };
+}
+
+const Work: React.FC = () => {
   const { dark } = useContext(ThemeContext);
-  const [max, setMax] = useState(2);
-  const data = useStaticQuery(graphql`
+  const [max, setMax] = useState<number>(2);
+  const data = useStaticQuery<WorkData>(graphql`
     {
       allWorkJson {
         edges {
@@ -65,7 +85,8 @@ const Work = () => {
                 <div className="ml-8">
                   <GatsbyImage
                     className="w-auto h-8 object-contain"
-                    {...node.icon.childImageSharp}
+                    image={node.icon.childImageSharp.fixed}
+                    alt={node.title}
                   />
                   <div className="mt-3 flex items-baseline">
                     <h6 className="font-semibold">{node.title}</h6>
@@ -79,7 +100,7 @@ const Work = () => {
                     </h6>
                   </div>
                   <h6 className="text-xs mt-2">
-                    {/* <strong>Worked with:</strong>*/} {node.specialization} 
+                    {/* <strong>Worked with:</strong>*/} {node.specialization}
                   </h6>
                 </div>
               </div>

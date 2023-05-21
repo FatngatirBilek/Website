@@ -5,13 +5,19 @@ import {
   FaInfoCircle,
   GoTools,
   IoIosDocument,
+  MdMusicNote,
   MdPerson,
   MdSchool,
   MdWork,
-  MdMusicNote,
 } from "../components/Icons";
 
-const sections = [
+interface Section {
+  id: string;
+  title: string;
+  icon: React.ElementType;
+}
+
+const sections: Section[] = [
   { id: "about-me", title: "About Me", icon: MdPerson },
   { id: "work", title: "Work", icon: MdWork },
   { id: "education", title: "Education", icon: MdSchool },

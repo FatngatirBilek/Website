@@ -4,8 +4,22 @@ import Heading from "../components/Heading";
 import { FaAngleRight, FaAward } from "../components/Icons";
 import styles from "./Meta.module.css";
 
-const Achievements = () => {
-  const data = useStaticQuery(graphql`
+interface AchievementNode {
+  node: {
+    id: string;
+    title: string;
+    subtitle: string;
+  };
+}
+
+interface AchievementsData {
+  allAchievementsJson: {
+    edges: AchievementNode[];
+  };
+}
+
+const Achievements: React.FC = () => {
+  const data = useStaticQuery<AchievementsData>(graphql`
     {
       allAchievementsJson {
         edges {

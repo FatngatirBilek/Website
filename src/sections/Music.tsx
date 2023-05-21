@@ -1,10 +1,16 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Heading from "../components/Heading";
 import { MdMusicNote } from "../components/Icons";
-import { graphql, useStaticQuery } from "gatsby";
 
-const Music = () => {
-  const data = useStaticQuery(graphql`
+interface MusicData {
+  markdownRemark: {
+    html: string;
+  };
+}
+
+const Music: React.FC = () => {
+  const data = useStaticQuery<MusicData>(graphql`
     {
       markdownRemark(frontmatter: { id: { eq: "music" } }) {
         html
@@ -27,7 +33,7 @@ const Music = () => {
         height="500"
         frameBorder="0"
         className="mt-5"
-        allowtransparency="true"
+        allowTransparency={true}
         allow="encrypted-media"
       ></iframe>
     </section>

@@ -2,9 +2,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const SEO = () => {
+const SEO: React.FC = () => {
   const { site, file } = useStaticQuery(graphql`
-    {
+    query {
       site {
         siteMetadata {
           title

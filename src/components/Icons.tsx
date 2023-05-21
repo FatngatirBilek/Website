@@ -28,10 +28,10 @@ import {
   MdLocationOn,
   MdMenu,
   MdMoreHoriz,
+  MdMusicNote,
   MdPerson,
   MdSchool,
   MdWork,
-  MdMusicNote,
 } from "react-icons/md";
 
 export {

@@ -1,13 +1,21 @@
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
+import GatsbyImage from "gatsby-plugin-image";
 import React from "react";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import { FaLink, IoIosDocument } from "../components/Icons";
 
-const Resume = () => {
-  const data = useStaticQuery(graphql`
+interface ResumeData {
+  file: {
+    childImageSharp: {
+      fluid: any;
+    };
+  };
+}
+
+const Resume: React.FC = () => {
+  const data = useStaticQuery<ResumeData>(graphql`
     {
       file(relativePath: { eq: "resume/preview.png" }) {
         childImageSharp {
@@ -35,7 +43,7 @@ const Resume = () => {
             <GatsbyImage
               className="absolute w-full h-64 md:h-48 lg:h-64 object-cover rounded-lg hover:opacity-50 duration-200"
               imgStyle={{ objectPosition: "top" }}
-              {...data.file.childImageSharp}
+              fluid={data.file.childImageSharp.fluid}
             />
             <span className="sr-only">Preview Resume</span>
           </OutboundLink>

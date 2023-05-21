@@ -1,3 +1,30 @@
+/* index.module.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .row-gap-16 {
+    /* CSS properties */
+  }
+
+  .row-gap-12 {
+    /* CSS properties */
+  }
+
+  .row-gap-24 {
+    /* CSS properties */
+  }
+  .row-gap-0 {
+    /* CSS properties */
+  }
+
+  .hover:text-primary-500 {
+    /* CSS properties */
+  }
+}
+
 .layout {
   @apply grid grid-cols-1 row-gap-16;
 }

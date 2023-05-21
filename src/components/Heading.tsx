@@ -1,9 +1,12 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React, { FunctionComponent } from "react";
 
-const Heading = ({ icon, title }) => {
-  const Icon = icon;
+interface HeadingProps {
+  icon: React.ComponentType<{ size: string }>;
+  title: string;
+}
 
+const Heading: FunctionComponent<HeadingProps> = ({ icon: Icon, title }) => {
   return (
     <div className="heading flex items-center pb-8">
       <Icon size="0.875rem" className="mr-2" />

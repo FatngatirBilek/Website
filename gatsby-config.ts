@@ -4,26 +4,32 @@ const tailwindConfig = require(`./tailwind.config.js`);
 const fullConfig = resolveConfig(tailwindConfig);
 require(`dotenv`).config({ path: `.env` });
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Fathir`,
     description: `Gw gatau gunanya web ini buat apa.`,
-    author: `Fathirbilek`,
+    author: `Fathir`,
     siteUrl: `https://fatngatirbilek.eu.org`,
   },
   plugins: [
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      // You can add multiple tracking ids and a pageview event will be fired for all of them.
+      trackingIds: [
+        "G-17D83KMZ83", // Google Analytics / GA
+      ],
+      // This object is used for configuration specific to this plugin
+      pluginConfig: {
+        // Puts tracking script in the head instead of the body
+        head: true,
+      },
+    },
+    },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://fatngatirbilek.eu.org`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-96XB8DPCNK",
-        head: true,
-        anoonymize: true
       },
     },
     `gatsby-plugin-sitemap`,
@@ -109,5 +115,7 @@ module.exports = {
         purgeOnly: [`src/css/tailwind.css`],
       },
     },
-  ],
+  ]
 };
+
+export default config;

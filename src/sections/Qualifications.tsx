@@ -4,8 +4,20 @@ import Heading from "../components/Heading";
 import { AiFillSafetyCertificate, FaAngleRight } from "../components/Icons";
 import styles from "./Meta.module.css";
 
-const Qualifications = () => {
-  const data = useStaticQuery(graphql`
+interface QualificationsData {
+  allQualificationsJson: {
+    edges: {
+      node: {
+        id: string;
+        title: string;
+        subtitle: string;
+      };
+    }[];
+  };
+}
+
+const Qualifications: React.FC = () => {
+  const data = useStaticQuery<QualificationsData>(graphql`
     {
       allQualificationsJson {
         edges {

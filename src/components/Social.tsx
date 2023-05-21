@@ -1,13 +1,20 @@
-import Tooltip from "@material-ui/core/Tooltip";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import Tooltip from "@mui/material/Tooltip";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 import social from "../data/social";
 import styles from "./Social.module.css";
 
-const Social = () => {
+interface SocialItem {
+  title: string;
+  icon: React.ComponentType<{ color: string; size: string }>;
+  link: string;
+  class: string;
+}
+
+const Social: React.FC = () => {
   return (
     <div className={styles.container}>
-      {social.map((x, i) => {
+      {social.map((x: SocialItem, i: number) => {
         const Icon = x.icon;
 
         return (
@@ -18,7 +25,7 @@ const Social = () => {
               rel="noopener noreferrer"
               className={`${x.class}`}
             >
-              <Icon color="#FFF" size="0.9em"/>
+              <Icon color="#FFF" size="0.9em" />
               <span className="sr-only">{x.title}</span>
             </OutboundLink>
           </Tooltip>

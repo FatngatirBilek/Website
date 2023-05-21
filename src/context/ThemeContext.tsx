@@ -1,22 +1,34 @@
-import PropTypes from "prop-types";
-import React from "react";
+import React, { Component, createContext } from "react";
 
-const defaultState = {
+interface ThemeContextProps {
+  dark: boolean;
+  toggleDark: () => void;
+}
+
+const defaultState: ThemeContextProps = {
   dark: true,
   toggleDark: () => {},
 };
 
-const ThemeContext = React.createContext(defaultState);
+const ThemeContext = createContext<ThemeContextProps>(defaultState);
 
-const supportsDarkMode = () =>
+const supportsDarkMode = (): boolean =>
   window.matchMedia("(prefers-color-scheme: dark)").matches === true;
 
-class ThemeProvider extends React.Component {
-  state = {
+interface ThemeProviderProps {
+  children: React.ReactNode;
+}
+
+interface ThemeProviderState {
+  dark: boolean;
+}
+
+class ThemeProvider extends Component<ThemeProviderProps, ThemeProviderState> {
+  state: ThemeProviderState = {
     dark: true,
   };
 
-  toggleDark = () => {
+  toggleDark = (): void => {
     let dark = !this.state.dark;
     localStorage.setItem("dark", JSON.stringify(dark));
     this.setState({ dark });
@@ -49,10 +61,5 @@ class ThemeProvider extends React.Component {
   }
 }
 
-ThemeProvider.propTypes = {
-  children: PropTypes.element.isRequired,
-};
-
 export default ThemeContext;
-
 export { ThemeProvider };

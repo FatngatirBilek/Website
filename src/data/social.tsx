@@ -5,7 +5,14 @@ import {
   FaLinkedinIn,
 } from "../components/Icons";
 
-const social = [
+interface SocialItem {
+  title: string;
+  icon: React.ElementType;
+  link: string;
+  class: string;
+}
+
+const social: SocialItem[] = [
   {
     title: "GitHub",
     icon: FaGithubAlt,
@@ -29,7 +36,7 @@ const social = [
     icon: FaFacebookF,
     link: "https://facebook.com/Fatngatirbilek",
     class: "bg-facebook",
-  }
+  },
 ];
 
 export default social;

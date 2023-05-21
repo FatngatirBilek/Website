@@ -21,7 +21,7 @@
 
 .container.light > div:first-child {
   color: #ffffffee;
-} 
+}
 
 .container > div:first-child svg {
   @apply mr-3;

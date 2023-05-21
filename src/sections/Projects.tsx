@@ -1,15 +1,34 @@
-import Tooltip from "@material-ui/core/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import { FaDev, FaGithub, FaLink } from "../components/Icons";
 import styles from "./Projects.module.css";
 
-const Projects = () => {
-  const data = useStaticQuery(graphql`
+interface ProjectsData {
+  allProjectsJson: {
+    edges: {
+      node: {
+        id: string;
+        title: string;
+        description: string;
+        tags: string[];
+        website: string;
+        github: string;
+        image: {
+          childImageSharp: {
+            fluid: any;
+          };
+        };
+      };
+    }[];
+  };
+}
+
+const Projects: React.FC = () => {
+  const data = useStaticQuery<ProjectsData>(graphql`
     {
       allProjectsJson {
         edges {
@@ -102,14 +121,16 @@ const Projects = () => {
           </div>
         ))}
       </div>
-            
+
       <div className="flex justify-start">
-      <Button
-        className="m-0"
-        icon={FaGithub}
-        title="More on GitHub"
-        onClick={() => window.open("https://github.com/fatngatirbilek", "_blank")}
-      />
+        <Button
+          className="m-0"
+          icon={FaGithub}
+          title="More on GitHub"
+          onClick={() =>
+            window.open("https://github.com/fatngatirbilek", "_blank")
+          }
+        />
       </div>
     </section>
   );

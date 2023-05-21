@@ -1,11 +1,26 @@
-import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styles from "./Button.module.css";
+import React, { FunctionComponent, useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
+import styles from "./Button.module.css";
 
-const Button = ({ type, className, icon, title, onClick, disabled }) => {
+interface ButtonProps {
+  type?: "button" | "submit" | "reset";
+  className?: string;
+  icon: FunctionComponent;
+  title: string;
+  onClick: () => void;
+  disabled?: boolean;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  type = "button",
+  className,
+  icon: Icon,
+  title,
+  onClick,
+  disabled = false,
+}) => {
   const { dark } = useContext(ThemeContext);
-  const Icon = icon;
 
   return (
     <button
@@ -24,17 +39,12 @@ const Button = ({ type, className, icon, title, onClick, disabled }) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["button", "submit", "reset"]),
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
-  icon: PropTypes.any.isRequired,
+  icon: PropTypes.elementType.isRequired,
   onClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-};
-
-Button.defaultProps = {
-  type: "button",
-  disabled: false,
 };
 
 export default Button;
