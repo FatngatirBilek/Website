@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-gtag";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React from "react";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
