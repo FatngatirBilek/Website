@@ -1,5 +1,5 @@
 import Tooltip from "@material-ui/core/Tooltip";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 import social from "../data/social";
 import styles from "./Social.module.css";

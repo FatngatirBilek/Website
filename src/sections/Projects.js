@@ -1,7 +1,6 @@
-import Tooltip from "@material-ui/core/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
@@ -102,7 +101,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-            
+
       <div className="flex justify-start">
       <Button
         className="m-0"
