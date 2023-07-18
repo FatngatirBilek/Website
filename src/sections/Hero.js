@@ -1,11 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import Parallax from "parallax-js";
-import React, { useRef, useState, useEffect } from "react";
-import Social from "../components/Social";
+import React, { useEffect, useRef, useState } from "react";
 import Subtitle from "../components/Subtitle";
 import styles from "./Hero.module.css";
-import Typist from "react-typist";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -57,7 +55,7 @@ const Hero = () => {
         <div className="col-span-3">
           <h1 className="sr-only">
             Fathir's Home on the Web
-            Orang paling keren di sekolah
+            Orang paling keren
           </h1>
 
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
@@ -66,7 +64,7 @@ const Hero = () => {
                 Hi, I'm Fathir
               </span> <br />
             </h1>
-            
+
             <Subtitle onDone={() => setShowSocial(true)} />
 
             {/* <div className="w-full md:w-auto h-6 my-6">
